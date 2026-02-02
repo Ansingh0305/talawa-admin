@@ -1,0 +1,28 @@
+{
+  "all": false,
+  "extension": [".js", ".jsx", ".ts", ".tsx"],
+  "include": [
+    "src/**/*.{js,jsx,ts,tsx}",
+    "scripts/eslint/**/*.{js,jsx,ts,tsx}"
+  ],
+  "exclude": [
+    "node_modules/**",
+    "dist/**",
+    "docs/**",
+    "**/*.{spec,test}.{js,jsx,ts,tsx}",
+    "**/*.{mocks,mock,helpers,mockHelpers}.{js,jsx,ts,tsx}",
+    "coverage/**",
+    "src/!(install)/index.{js,ts}",
+    "**/*.d.ts",
+    "src/test/**",
+    "vitest.config.ts",
+    "vitest.setup.ts",
+    "cypress/**",
+    "cypress.config.ts",
+    ".github/**",
+    "scripts/!(eslint)/**",
+    "scripts/*.{js,ts}",
+    "scripts/eslint/config/**",
+    "config/**"
+  ]
+}

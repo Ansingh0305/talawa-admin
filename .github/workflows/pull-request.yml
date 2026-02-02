@@ -717,7 +717,7 @@ jobs:
         if: steps.check-artifacts.outputs.artifacts_found == 'true'
         run: |
           echo "Generating lcov report from merged coverage..."
-          pnpm exec nyc report --reporter=lcov --report-dir=./coverage/vitest
+          pnpm exec nyc report --nycrc-path ./config/nyc.vitest.json --reporter=lcov --report-dir=./coverage/vitest
 
       - name: Analyze lcov structure
         if: steps.check-artifacts.outputs.artifacts_found == 'true'
